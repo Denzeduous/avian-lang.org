@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://avian-lang.org/aop/</loc>
+    <lastmod>2020-01-20T20:46:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/about/</loc>
+    <lastmod>2020-01-20T20:27:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/</loc>
+    <lastmod>2020-01-20T20:27:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/series/</loc>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/tags/</loc>
+  </url>
+  
+</urlset>

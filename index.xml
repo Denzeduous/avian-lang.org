@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Avian</title>
+    <link>https://avian-lang.org/</link>
+    <description>Recent content in Home on Avian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;#xA9; 2020 by Alec Sanchez (F0x1fy). All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 20 Jan 2020 20:27:17 -0700</lastBuildDate>
+    
+	<atom:link href="https://avian-lang.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://avian-lang.org/about/</link>
+      <pubDate>Mon, 20 Jan 2020 20:27:17 -0700</pubDate>
+      
+      <guid>https://avian-lang.org/about/</guid>
+      <description>Avian: The First Actor-Oriented Programming Language Hello and welcome to Avian, the first programming language created for the Actor-Oriented Programming (AOP) paradigm. Avian was made with the pillars of AOP in mind:
+ Explicitness over implicitness Employment Inheritence Polymorphism  The rest of this page will be done in the near future. Please be patient during this time :)</description>
+    </item>
+    
+  </channel>
+</rss>
