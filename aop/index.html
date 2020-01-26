@@ -5,10 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Actor-Oriented Programming What is Actor-Oriented Programming (AOP)? AOP is a new paradigm branching off from Object-Oriented Programming (OOP)). AOP takes the focus away from the data and moves it back to the implementation. How is this achieved? Imagine a namespace had a baby with an interface, and you&#39;ve got actors. Actors are the main focus of AOP.
-The Four Pillars of Actor-Oriented Programming are:
- Explicitness over implicitness Employment Inheritence Polymorphism  &amp;ldquo;Wait,&amp;rdquo; you might say, &amp;ldquo;two of those are from the three pillars of OOP!" />
-<meta name="keywords" content="avian, actor-oriented programming, aop, programming, language, programming language, new, procedural, procedural programming" />
+<meta name="description" content="This has been renamed Actor-Oriented Programming (AOP) has been renamed to Behavior-Oriented Programming." />
+<meta name="keywords" content="avian, behavior-oriented programming, bop, programming, language, programming language, new, procedural, procedural programming" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://avian-lang.org/aop/" />
@@ -16,7 +14,7 @@ The Four Pillars of Actor-Oriented Programming are:
 
     <title>
         
-             :: Avian  — The Actor-Oriented Programming Language
+            Avian — The Behavior-Oriented Programming Language
         
     </title>
 
@@ -33,17 +31,15 @@ The Four Pillars of Actor-Oriented Programming are:
 
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="The official website for Avian, the first Actor-Oriented Programming Language."><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="description" content="The official website for Avian, the first Behavior-Oriented Programming Language."><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://avian-lang.org/"/>
 
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="The official website for Avian, the first Actor-Oriented Programming Language."/>
+<meta name="twitter:description" content="The official website for Avian, the first Behavior-Oriented Programming Language."/>
 
 
 
 
-
-    <meta property="article:published_time" content="2020-01-20 20:46:51 -0700 MST" />
 
 
 
@@ -73,7 +69,7 @@ The Four Pillars of Actor-Oriented Programming are:
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://avian-lang.org/">Home</a></li><li><a href="https://avian-lang.org/about">About</a></li><li><a href="https://avian-lang.org/docs">Documentation</a></li><li><a href="https://avian-lang.org/aop">Actor-Oriented Programming</a></li>
+    <ul class="menu__inner"><li><a href="https://avian-lang.org/">Home</a></li><li><a href="https://avian-lang.org/about">About</a></li><li><a href="https://avian-lang.org/docs">Documentation</a></li><li><a href="https://avian-lang.org/bop">Behavior-Oriented Programming</a></li>
     </ul>
 </nav>
 
@@ -100,143 +96,8 @@ The Four Pillars of Actor-Oriented Programming are:
                 
     <main class="posts">
         <h1></h1>
-            <div class="content"><h1 id="actor-oriented-programming">Actor-Oriented Programming</h1>
-<p>What is Actor-Oriented Programming (AOP)? AOP is a new paradigm branching off from <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-Oriented Programming (OOP)</a>). AOP takes the focus away from the data and moves it back to the implementation. How is this achieved? Imagine a namespace had a baby with an interface, and you've got actors. Actors are the main focus of AOP.</p>
-<p>The Four Pillars of Actor-Oriented Programming are:</p>
-<ul>
-<li>Explicitness over implicitness</li>
-<li>Employment</li>
-<li>Inheritence</li>
-<li>Polymorphism</li>
-</ul>
-<p>&ldquo;Wait,&rdquo; you might say, &ldquo;two of those are from the three pillars of OOP!&rdquo; and you'd be right. AOP is a paradigm based heavily on OOP, taking the best parts of it, but taking away all of the power from data to act since they've been too naughty for too long with that privilege. Data should NOT act, it should ask for actors to act on it. Let's first talk about The Four Pillars.
-z</p>
-<h3 id="explicitness-over-implicitness">Explicitness Over Implicitness</h3>
-<p>This is first for a reason. In AOP, everything you do should be explicitly YOUR choice. You have control over the code and how you use it, not anyone else. This can lead to some pitfalls and the possibility of shooting yourself in the foot if done poorly, that's understood. AOP seek to make this as simple and straight-forward as possible with <a href="#Actors">Actors</a>.</p>
-<h3 id="employment">Employment</h3>
-<p>Employment is the second, and thereby one of the most important, pillar. Employment is how AOP works so well; you take actors and have objects employ them. Through this, the programmer can control what functionality they wish without being impeded. Functionality can be easily removed, added, swapped, and possibly more! AOP is such a new paradigm that things will radically shift in short periods of time, employment probably going to see the most radical changes of all.</p>
-<h3 id="inheritence">Inheritence</h3>
-<p>Just like OOP, <a href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)">Inheritence</a> is a core part of AOP. However, instead of with classes it's with actors and objects. In AOP, actors can inherit <a href="#Actions">actions</a> and procedures from parent actors. This, like in OOP, allows for some amazing type-based code structures.</p>
-<h3 id="polymorphism">Polymorphism</h3>
-<p>Though AOP has <a href="https://en.wikipedia.org/wiki/Polymorphism_(object-oriented_programming)">Polymorphism</a> just like in OOP, here it's a bit different. AOP discourages overloading (though an individual language could implement it) but openly allows for <a href="https://en.wikipedia.org/wiki/Override_(object-oriented_programming)">Overriding</a> and <a href="https://en.wikipedia.org/wiki/Parametric_polymorphism">Parametric Polymorphism</a>. The reason that overloading is discouraged is that it can complicated the language's ABI and the confusion that implicit overloading causes is not worth it (though of course, explicit compile-time overloading is fine).</p>
-<h2 id="actors">Actors</h2>
-<p>Finally we get into the meat of Actor-Oriented Programming, the actors! In AOP, actors are essentially both namespaces and interfaces. Actors cannot hold data, that's the job of objects, but they can hold actions and procedures. In OOP, the equivalent to an action would be a method. What's the difference between actors and procedures? First, let's explain the concept of object precedence in parameters.</p>
-<h3 id="object-precedence">Object Precedence</h3>
-<p>When an object has precedence, that essentially means it's more important in the procedure/action then another parameter. Object precedence is an important concept in AOP. Let's take a car, for example, using Avian:</p>
-<pre><code>Car :: obj {
-    tires: [4]Tire,
-}
-
-Tire :: obj {
-    ...
-}
-
-Vehicle :: actor (tires: []Tire) {
-    add_tire :: act (tire: Tire, i: int) (
-        'tires[i] = tire;
-    }
-}
-
-main :: proc() {
-    car  := Car[Vehicle('tires)]{};
-    tire := Tire{};
-    car-&gt;add_tire(tire, 0);
-}
-</code></pre><p>In this example, the car has higher object precedence than the tire, thus the car is the one employing the actor, instead of vice versa.</p>
-<h4 id="employment-1">Employment</h4>
-<p>This example also illustrates the point that objects can't act by themselves. The programmer first has to manually employ the <code>Vehicle</code> actor to the car's initialization. This is all up to the programmers using the object, and can be used to remove functionality you're never going to use, new functionality, or even choosing from different types of functionality! That's the true power of Employment, and allows for some amazing things shown later.</p>
-<h3 id="procedures">Procedures</h3>
-<p>Procedures should not have side-effects. Obviously, there are edge cases to this, but for the most part, there shouldn't be unintended side-effects. If your procedure requires a side-effect, make sure to document it well. Other than that, procedures are just normal functions. All parameters have equal precedence in the procedure.</p>
-<h3 id="actions">Actions</h3>
-<p>Actions should always have side-effects and have lopsided object precedence. However, actions should only have side-effects on the object that's employing that actor. If there's a reason as to why your action has a side-effect on another parameter, either that parameter should have higher precedence and be the one calling the action or there's most likely something wrong with your code structure. If there's a reason both of those are false, be sure to document it well.</p>
-<h3 id="employment-in-action">Employment in Action</h3>
-<p>Though employment was explained a short while ago, here's a practical view of it. This is one of the major features of AOP. Actors handle the implementation, all the programmer has to do do is tell the actor &ldquo;Hey, use this data please.&rdquo; Example:</p>
-<pre><code>Foo :: obj {
-    list: []?T;
-}
-
-BubbleSorter :: actor (list: []?T) {
-    sort :: act () {
-        ...
-    }
-}
-
-QuickSorter :: actor (list: []?T) {
-    sort :: act () {
-        ...
-    }
-}
-
-main :: proc () {
-    bubble_foo := Foo(int)[BubbleSorter('list)]{};
-    quick_foo  := Foo(int)[QuickSorter('list)]{};
-    
-    // Fill bubble_foo with data...
-    // Fill quick_foo with data...
-    
-    bubble_foo-&gt;sort();
-    quick_foo-&gt;sort();
-}
-</code></pre><p>This example displays both generics AND choosing different functionality by employing different actors! You're able to use different functionality by employing separate actors, allowing the programmer to decide specific implementations instead of the object itself! The previous example of employment is very similar to OOP's clunky workaround way of having an abstract object as a member in it, then calling functions through that member, though this is much more elegant and much more flexible (as in OOP this can't be achieved without accounting for it in the class, which removes power from the programmer and locks the implementation away).</p>
-<h3 id="casts">Casts</h3>
-<p>Casts are another unique addition to AOP. Consider them a structured union of actors that allow for templating some members across multiple actors quickly and painlessly. Here's an example in Avian (that also shows some more parametric polymorphism!):</p>
-<pre><code>Adder :: actor ('value: ?T/int) {
-    add :: act (other: T) {
-        'value += other;
-    }
-}
-
-Subtractor :: actor ('value: ?T/int) {
-    sub :: act (other: T) {
-        'value -= other;
-    }
-}
-
-Multiplier :: actor ('value: ?T/int) {
-    mul :: act (other: T) {
-        'value *= other;
-    }
-}
-
-Divider :: actor ('value: ?T/int) {
-    div :: act (other: T) {
-        'value /= other;
-    }
-}
-
-Modulator :: actor ('value: ?T/int) {
-    mod :: act (other: T) {
-        'value %= other;
-    }
-}
-
-Calculator :: cast ('value: int) {
-    Adder('value),
-    Subtractor('value),
-    Multiplier('value),
-    Divider('value),
-    Modulator('value),
-}
-
-Foo :: obj {
-    a: int,
-}
-
-main :: proc () {
-    foo := Foo[Calculator('a)]{10};
-    foo-&gt;add(10); // 20
-    foo-&gt;sub(10); // 10
-    foo-&gt;div(2);  // 5
-    foo-&gt;mod(5);  // 0
-}
-</code></pre><p>See how wonderful that makes adding multiple actors together on a single object? It requires very little work and reduces the inherit verbosity with large groups of actors.</p>
-<p>Instead of having to type:</p>
-<pre><code>foo := Foo[Adder('a), Subtractor('a), Multiplier('a), Divider('a), Modulator('a)]{10};
-</code></pre><p>You instead simply do:</p>
-<pre><code>foo := Foo[Calculator('a)]{10};
-</code></pre><p>Wonderful, isn't it?</p>
-<h3 id="conclusion-on-actor-oriented-programming">Conclusion on Actor-Oriented Programming</h3>
-<p>There is a lot more to be discovered with this wonderful, new paradigm. As AOP is more fully realized, more will be added to this page. Ideas? Come share them in the official <a href="https://discord.gg/RyN3Sxb">Discord Server</a>! We'd love to hear your ideas, opinions, and more!</p>
+            <div class="content"><h1 id="this-has-been-renamed">This has been renamed</h1>
+<p>Actor-Oriented Programming (AOP) has been renamed to <a href="https://avian-lang.org/bop/">Behavior-Oriented Programming</a>.</p>
 </div>
     </main>
 
@@ -246,7 +107,6 @@ main :: proc () {
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2020</span>
             
             <span>&#xA9; 2020 by Alec Sanchez (F0x1fy). All Rights Reserved.</span>
             <span> <a href="https://avian-lang.org/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>

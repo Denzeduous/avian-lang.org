@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://avian-lang.org/aop/</loc>
+    <loc>https://avian-lang.org/bop/</loc>
     <lastmod>2020-01-20T20:46:51-07:00</lastmod>
   </url>
   
@@ -15,6 +15,16 @@
   <url>
     <loc>https://avian-lang.org/</loc>
     <lastmod>2020-01-20T20:27:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/aop/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://avian-lang.org/docs/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
